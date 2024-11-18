@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="./css/partida.css">
+</head>
+<body>
+  <div class="App">
+    <div class="App-header">
+      <h1>Registro de Datos</h1>
+      <button class="button" id="openModalBtn">Registrar</button>
+      <div id="todos" class="todoComponents"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Registro de Usuario</h2>
+      <form id="formData">
+        <input type="text" id="doc" placeholder="Documento" required><br>
+        <input type="text" id="name" placeholder="Nombre" required><br>
+        <input type="number" id="age" placeholder="Edad" required><br>
+        
+        <input type="file" id="photoInput" accept="image/*" required><br>
+        
+        <img id="preview" style="display:none; width: 100px; height: 100px; object-fit: cover; margin-top: 10px;" />
+        
+        <input type="text" id="city" placeholder="Ciudad" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="tel" id="phone" placeholder="Celular" required><br>
+        <input type="date" id="startDate" placeholder="Fecha de inicio" required><br>
+        <textarea id="action" placeholder="Acción"></textarea><br>
+        <textarea id="post" placeholder="Post"></textarea><br>
+        <button type="submit" class="buttonCreate">Guardar</button>
+      </form>
+      
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+</body>
+</html>
